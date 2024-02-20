@@ -1,0 +1,13 @@
+public class TrinomioCuadradoPerfecto {
+
+    // Método para verificar si un trinomio es cuadrado perfecto
+    public boolean esCuadradoPerfecto(int a, int b, int c) {
+        return (b * b == 4 * a * c);
+    }
+
+    // Método para obtener el binomio cuadrado perfecto de un trinomio
+    public String obtenerBinomioCuadradoPerfecto(int a, int b, int c) {
+        int raiz = (int) Math.sqrt(a);
+        return "(" + raiz + "x + " + (b / (2 * raiz)) + ")^2";
+    }
+}
